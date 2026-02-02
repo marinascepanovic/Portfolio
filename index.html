@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marina Madžgalj | Junior Software Engineer</title>
+
+  <!-- ==================================================================== -->
+  <!-- ICONS                                                               -->
+  <!-- ==================================================================== -->
+  <link
+    rel="stylesheet"
+    href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+  />
+
+  <!-- ==================================================================== -->
+  <!-- GOOGLE FONTS                                                         -->
+  <!-- ==================================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ==================================================================== -->
+  <!-- AOS                                                                  -->
+  <!-- ==================================================================== -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- ==================================================================== -->
+  <!-- CSS                                                                  -->
+  <!-- ==================================================================== -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="queries.css" />
+</head>
+<body>
+  <!-- ==================================================================== -->
+  <!-- NAVBAR                                                               -->
+  <!-- ==================================================================== -->
+  <nav>
+    <div class="container nav__container">
+      <a href="index.html">Marina Madžgalj</a>
+      <button class="nav__theme-btn">
+        <i class="uil uil-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================================================================== -->
+  <!-- FLOATING NAV                                                         -->
+  <!-- ==================================================================== -->
+  <menu class="floating__nav">
+    <a href="#" class="active"><i class="uil uil-estate"></i></a>
+    <a href="#resume"><i class="uil uil-user"></i></a>
+    <a href="#projects"><i class="uil uil-layers"></i></a>
+    <a href="#contact"><i class="uil uil-envelope"></i></a>
+  </menu>
+
+  <!-- ==================================================================== -->
+  <!-- HEADER                                                               -->
+  <!-- ==================================================================== -->
+  <header>
+    <div class="header__container">
+      <div class="header__image" data-aos="fade-up" data-aos-delay="400">
+        <img src="./assets/marina.png" alt="Marina's Image" />
+      </div>
+      <h5 data-aos="fade-in">Hello, I'm Marina</h5>
+      <h1 data-aos="fade-in">
+        Junior <span>Software Developer</span>
+      </h1>
+      <p data-aos="fade-in">
+        I’m a motivated junior Software developer, ready to work, learn, collaborate
+        and contribute to real-world projects.
+      </p>
+      <div class="header__cta" data-aos="fade-up">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn primary">Contact Me</a>
+      </div>
+      <menu class="header__socials">
+        <a
+          href="https://www.linkedin.com/in/marina-scepanovic-ab09b53a8"
+          target="_blank"
+        >
+          <i class="uil uil-linkedin-alt"></i>
+        </a>
+        <a href="https://github.com/marinascepanovic" target="_blank">
+          <i class="uil uil-github-alt"></i>
+        </a>
+      </menu>
+    </div>
+  </header>
+
+  <!-- ==================================================================== -->
+  <!-- RESUME                                                               -->
+  <!-- ==================================================================== -->
+  <section id="resume">
+    <div
+      class="container resume__container"
+      data-aos="fade-in"
+      data-aos-delay="150"
+    >
+      <div class="resume__left">
+        <h1>Resume</h1>
+
+        <menu>
+          <button class="btn primary experience__btn">Experience</button>
+          <button class="btn education__btn">Education</button>
+          <button class="btn skills__btn">Skills</button>
+          <button class="btn about__btn">About me</button>
+        </menu>
+      </div>
+      <div class="resume__right">
+        <!-- Content is injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- PROJECTS                                                             -->
+  <!-- ==================================================================== -->
+  <section class="projects" id="projects">
+    <h1>Featured Projects</h1>
+    <p>
+      A selection of projects where I practised building real-world web
+      interfaces and full-stack functionality.
+    </p>
+
+    <menu class="projects__categories">
+      <button class="btn primary" data-filter="*">All</button>
+      <button class="btn" data-filter=".frontend">Frontend</button>
+      <button class="btn" data-filter=".backend">Backend</button>
+    </menu>
+
+    <div
+      class="container projects__container"
+      data-aos="fade-in"
+      data-aos-delay="200"
+    >
+      <!-- ================================================================ -->
+      <!-- WANDERLOG (FRONTEND)                                            -->
+      <!-- ================================================================ -->
+      <article class="project frontend" data-order="1">
+        <div class="project__image">
+          <img src="./assets/project1.png" alt="WanderLog App" />
+        </div>
+        <h5>WanderLog – Travel Planner (MERN)</h5>
+        <p>
+          Travel planning web app where users can create trips, add activities
+          (flights, accommodation, tours) and see a simple overview of budget
+          and expenses. Built with the MERN stack and JWT-based auth.
+        </p>
+        <div class="project__cta">
+          <!-- LIVE LINK ================================================== -->
+          <a
+            href="https://wanderlog-frontend.netlify.app/"
+            class="btn"
+            target="_blank"
+          >
+            <i class="uil uil-link"></i>
+          </a>
+          <!-- GITHUB ===================================================== -->
+          <a
+            href="https://github.com/AleksandarGvozdenovic/WanderLog-frontend"
+            class="btn"
+            target="_blank"
+          >
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </div>
+      </article>
+
+        <h5>Trivia Game</h5>
+        <p>
+        A simple browser-based quiz game. Technologies used: JavaScript, HTML and CSS. The goal is to test your knowledge of programming concepts with a countdown timer on each question.
+        </p>
+        <div class="project__cta">
+          <!-- LIVE LINK ================================================== -->
+          <a
+            href="https://marinascepanovic.github.io/-Browser-Based-Game-Project/"
+            class="btn"
+            target="_blank"
+          >
+            <i class="uil uil-link"></i>
+          </a>
+          <!-- GITHUB ===================================================== -->
+          <a
+            href="https://github.com/marinascepanovic/-Browser-Based-Game-Project"
+            class="btn"
+            target="_blank"
+          >
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </div>
+      </article>
+
+      
+
+      
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- CONTACT                                                             -->
+  <!-- ==================================================================== -->
+  <section id="contact">
+    <div class="container contact__container">
+      <h1>Contact</h1>
+      <p>Feel free to reach out if you'd like to collaborate or just say hi.</p>
+
+      <menu class="contact__options">
+        <a href="#contact-form" class="contact__option">
+          <i class="uil uil-envelope"></i>
+        </a>
+        <a href="#contact-form" class="contact__option">
+          <i class="uil uil-whatsapp"></i>
+        </a>
+        <a href="#contact-form" class="contact__option">
+          <i class="uil uil-phone"></i>
+        </a>
+      </menu>
+
+      <form
+        id="contact-form"
+        action="https://formsubmit.co/9c3e6a9608cfaf52e095ebeeef6ad557"
+        method="POST"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <input type="text" name="Name" placeholder="Full Name" required />
+        <input
+          type="email"
+          name="Email"
+          placeholder="Email Address"
+          required
+        />
+        <textarea rows="7" name="Message" placeholder="Message" required></textarea>
+        <button type="submit" class="btn primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- SCRIPTS                                                             -->
+  <!-- ==================================================================== -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, offset: 80 });
+  </script>
+  <script src="./script.js"></script>
+  <footer style="text-align:center; padding: 1.5rem 0; font-size: 0.8rem; color: #6b7280;">
+  © 2025 Marina Madžgalj. All rights reserved.
+</footer>
+</body>
+</html>

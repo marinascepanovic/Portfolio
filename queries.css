@@ -1,0 +1,114 @@
+/* ==================================================================== */
+/* MEDIA QUERIES                                                        */
+/* ==================================================================== */
+
+/* ==================================================================== */
+/* ≤ 900px  (TABLET / SMALL LAPTOPS)                                   */
+/* ==================================================================== */
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: var(--container-w-sm);
+  }
+
+  /* Resume in a single column, centered */
+  .resume__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .resume__left {
+    text-align: center;
+  }
+
+  .resume__left menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  /* Hide social icons in header on smaller screens */
+  .header__socials {
+    display: none;
+  }
+
+  /* Slightly tighter projects layout */
+  .projects__container {
+    gap: 1.4rem;
+  }
+}
+
+/* ==================================================================== */
+/* ≤ 600px  (MOBILE)                                                    */
+/* ==================================================================== */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  nav {
+    height: 3.6rem;
+  }
+
+  /* Header height adjusted for taller navbar */
+  header {
+    min-height: calc(100vh - 3.6rem);
+  }
+
+  .header__container {
+    width: var(--container-w-sm);
+  }
+
+  .header__cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* ---------------------------------------------------- */
+  /* RESUME – MORE HORIZONTAL PADDING ON MOBILE           */
+  /* ---------------------------------------------------- */
+
+  .resume__container {
+    width: 100%;
+    padding-inline: 1.2rem;
+    gap: 1.8rem;
+  }
+
+  .resume__right {
+    font-size: 0.95rem;
+  }
+
+  .resume__left menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  /* Cards (Experience / Education / About) in a single column */
+  .resume__right ul {
+    grid-template-columns: 1fr;
+  }
+
+  /* Skills in two columns so it’s not too tall */
+  .resume__right.skills ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .projects__categories {
+    margin-top: 2rem;
+  }
+
+  .contact__options {
+    gap: 0.7rem;
+  }
+
+  form button {
+    width: 100%;
+    justify-content: center;
+  }
+}
